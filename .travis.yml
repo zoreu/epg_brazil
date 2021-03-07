@@ -9,4 +9,4 @@ before_script:
   - git config --global user.name "TravisCI"
   - git config --global push.default "matching"
 script:
-  - build.sh
+  - bash build.sh
