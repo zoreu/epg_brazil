@@ -44,7 +44,7 @@ cd ..
 cd ..
 #copia arquivos da pasta config/ para pasta wg
 yes | cp -r config/WebGrab* wg
-#yes | cp -r config/mdb* wg/mdb
+yes | cp -r config/mdb* wg/mdb
 #entra na pasta wg
 cd wg
 #roda o WebGrab+Plus
