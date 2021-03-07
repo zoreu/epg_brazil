@@ -5,6 +5,8 @@ branches:
 #install:
 # -  
 before_script:
+  - echo 'America/Sao_Paulo' | sudo tee /etc/timezone
+  - sudo dpkg-reconfigure --frontend noninteractive tzdata
   - git config --global user.email "travis@travis-ci.org"
   - git config --global user.name "TravisCI"
   - git config --global push.default "matching"
