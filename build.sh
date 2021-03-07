@@ -24,11 +24,11 @@ echo "###### Extrair webgrabplus #######"
 tar -zxvf WebGrabPlus_V3.1_install.tar.gz
 #mudar pasta .wg++ para wg
 mv .wg++ wg
-#echo "###### Update webgrabplus #######"
-#wget http://webgrabplus.com/sites/default/files/download/SW/V2.1.11/WebGrabPlus_V2.1.11_beta_install.tar.gz
-#tar -zxvf WebGrabPlus_V3.1.6_beta_install.tar.gz
-#mv .wg++ update
-#yes | cp -r update/bin/* wg/bin
+echo "###### Update webgrabplus #######"
+wget http://webgrabplus.com/sites/default/files/download/SW/V3.1.1/WebGrabPlus_V3.1.1_beta_install.tar.gz
+tar -zxvf WebGrabPlus_V3.1.1_beta_install.tar.gz
+mv .wg++ update
+yes | cp -r update/bin/* wg/bin
 echo "###### Instalando webgrabplus #######"
 #entra na pasta wg
 cd wg
