@@ -54,6 +54,10 @@ echo "Rodando webgrabplus"
 ls -l
 #sair da pasta wg
 cd ..
+yes | cp -r wg/xmltv.xml output
+cd output
+echo "Exibir pasta output"
+ls - l
 echo "###### webgrabplus instalado #######"
 date
 echo "Time Zone Atual:"
