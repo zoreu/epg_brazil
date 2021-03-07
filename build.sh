@@ -8,7 +8,8 @@ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328
 echo "deb https://download.mono-project.com/repo/ubuntu stable-focal main" | sudo tee /etc/apt/sources.list.d/mono-official-stable.list
 sudo apt update
 sudo apt install mono-complete
-sudo apt-get -f install
+sudo apt-get install -y mono-runtime mono-runtime-sgen mono-llvm-support libmono-2.0-1 mono-utils mono-devel mono-mcs mono-roslyn mono-csharp-shell mono-4.0-gac mono-4.0-service monodoc-base monodoc-manual libmono-cil-dev referenceassemblies-pcl msbuild ca-certificates-mono
+#sudo apt-get -f install
 echo "###### Download webgrabplus #######"
 wget http://webgrabplus.com/sites/default/files/download/SW/V3.1.0/WebGrabPlus_V3.1_install.tar.gz
 ls -l
