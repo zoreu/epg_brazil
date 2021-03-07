@@ -1,4 +1,5 @@
 echo "###### Atualizando o sistema #######"
+sudo apt-get update
 sudo apt-get install -y wget
 sudo apt-get install -y unzip
 echo "###### Preparando o webgrabplus #######"
