@@ -54,6 +54,7 @@ echo "Rodando webgrabplus"
 ls -l
 #sair da pasta wg
 cd ..
+mkdir output
 yes | cp -r wg/xmltv.xml output
 cd output
 echo "Exibir pasta output"
