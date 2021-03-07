@@ -1,10 +1,8 @@
 echo "###### Atualizando o sistema #######"
-apt-get update -qq
-apt-get install -qq git
-apt-get install -y wget
-apt-get install -y unzip
+sudo apt-get install -y wget
+sudo apt-get install -y unzip
 echo "###### Preparando o webgrabplus #######"
-apt-get install -y mono-runtime libmono-system-data4.0-cil libmono-system-web4.0-cil
+sudo apt-get install -y mono-runtime libmono-system-data4.0-cil libmono-system-web4.0-cil
 echo "###### Download webgrabplus #######"
 wget http://webgrabplus.com/sites/default/files/download/SW/V3.1.0/WebGrabPlus_V3.1_install.tar.gz
 ls -l
