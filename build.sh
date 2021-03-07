@@ -4,13 +4,6 @@ apt-get install -qq git
 apt-get install -y wget
 apt-get install -y unzip
 echo "###### Preparando o webgrabplus #######"
-# set noninteractive installation
-export DEBIAN_FRONTEND=noninteractive
-#install tzdata package
-apt-get install -y tzdata
-# set your timezone
-ln -fs /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime
-dpkg-reconfigure --frontend noninteractive tzdata
 apt-get install -y mono-runtime libmono-system-data4.0-cil libmono-system-web4.0-cil
 echo "###### Download webgrabplus #######"
 wget http://webgrabplus.com/sites/default/files/download/SW/V2.1.0/WebGrabPlus_V2.1_install.tar.gz
