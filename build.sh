@@ -36,6 +36,7 @@ yes | cp -r config/mdb* wg/mdb
 #entra na pasta wg
 cd wg
 #roda o WebGrab+Plus
+echo "Rodando webgrabplus"
 ./run.sh
 #listar arquivos
 ls -l
