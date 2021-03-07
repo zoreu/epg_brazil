@@ -54,12 +54,16 @@ echo "Rodando webgrabplus"
 ls -l
 #sair da pasta wg
 cd ..
-mkdir output
-yes | cp -r wg/xmltv.xml output
-cd output
-echo "Exibir pasta output"
-ls -l
+#mkdir output
+#yes | cp -r wg/xmltv.xml output
+#cd output
+#echo "Exibir pasta output"
+#ls -l
 echo "###### webgrabplus instalado #######"
 date
 echo "Time Zone Atual:"
 timedatectl | grep "Time zone"
+git clone -b epg "https://$token@github.com/zoreu/epg_brazil.git" output
+yes | cp -r wg/xmltv.xml output
+cd output && git add --all . && git commit -m "Publishing revision $(git --git-dir ../.git rev-parse --short HEAD)" && git push --force origin epg
+
