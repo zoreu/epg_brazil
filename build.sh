@@ -3,19 +3,11 @@ sudo apt-get update
 sudo apt-get install -y wget
 sudo apt-get install -y unzip
 echo "###### Preparando o webgrabplus #######"
-#sudo apt-get install -y mono-runtime libmono-system-data4.0-cil libmono-system-web4.0-cil
-#sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
-#sudo apt install apt-transport-https
-#echo "deb https://download.mono-project.com/repo/ubuntu stable-xenial main" | sudo tee /etc/apt/sources.list.d/mono-official-stable.list
-#sudo apt-get update
-#sudo apt-get install mono-runtime
-sudo apt update
-sudo apt install dirmngr gnupg apt-transport-https ca-certificates
+sudo apt install gnupg ca-certificates
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
-sudo sh -c 'echo "deb https://download.mono-project.com/repo/ubuntu stable-bionic main" > /etc/apt/sources.list.d/mono-official-stable.list'
+echo "deb https://download.mono-project.com/repo/ubuntu stable-focal main" | sudo tee /etc/apt/sources.list.d/mono-official-stable.list
 sudo apt update
-sudo apt install mono-complete
-mono --version
+sudo apt install mono-devel
 echo "###### Download webgrabplus #######"
 wget http://webgrabplus.com/sites/default/files/download/SW/V3.1.0/WebGrabPlus_V3.1_install.tar.gz
 ls -l
