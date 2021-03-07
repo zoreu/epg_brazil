@@ -1,7 +1,11 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <tv generator-info-name="WebGrab+Plus/w MDB &amp; REX Postprocess -- version V3.1.1.0 -- Jan van Straaten" generator-info-url="http://www.webgrabplus.com">
-  <channel id="BIS">
-    <display-name lang="pt">BIS</display-name>
+  <channel id="Globo">
+    <display-name lang="pt">Globo</display-name>
     <url>http://www.netcombo.com.br</url>
+  </channel>
+  <channel id="AXN [Brazil]">
+    <display-name lang="pt">AXN [Brazil]</display-name>
+    <url>http://www.meuguia.tv</url>
   </channel>
 </tv>
