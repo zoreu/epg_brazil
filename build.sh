@@ -30,5 +30,6 @@ cd wg
 ls -l
 cd ..
 echo "###### webgrabplus instalado #######"
-echo "Time Zone Atual:"
-timedatectl | grep "Time zone"
+ls /usr/share/zoneinfo/America/ | grep Sao
+#echo "Time Zone Atual:"
+#timedatectl | grep "Time zone"
